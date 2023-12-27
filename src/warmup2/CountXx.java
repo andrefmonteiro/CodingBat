@@ -18,7 +18,7 @@ countXX("xxxx") → 3
 
         for (int i = 0; i < str.length() - 1; i++){ // iterate through each char
 
-            if ((str.substring(i, i+1).equalsIgnoreCase("x")) && (str.substring(i+1, i+2).equalsIgnoreCase("x"))){
+            if (str.charAt(i) == 'x' && str.charAt(i+1) == 'x'){
                 numberOfXx++;
             }
         }
