@@ -11,13 +11,6 @@ public class ComboString {
 
     public String comboString(String a, String b) {
 
-        String shortString = a;
-        String longString = b;
-
-        if (a.length() > b.length()){
-            shortString = b;
-            longString = a;
-        }
-        return shortString + longString + shortString;
+       return a.length() < b.length() ?  a + b + a : b + a + b;
     }
 }
